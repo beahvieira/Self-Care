@@ -1,0 +1,310 @@
+/* Reset e configurações gerais */
+* {
+  margin: 0;
+  color: #161616;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Linha horizontal */
+.linha-seis {
+  border: none;
+  height: 0.3px;
+  background-color: #d8d8d8;
+
+}
+
+/* Cabeçalho */
+header {
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+/* Logos e ícones do cabeçalho */
+.logo {
+  width: 9vw;
+  height: 5vh;
+  display: flex;
+  font-size: 2.3vh;
+  margin-right: 8.5vw;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.icons-header {
+  width: 6vw;
+  height: 5vh;
+  display: flex;
+  font-size: 2.3vh;
+  margin-left: 8.5vw;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+/* Banner */
+.banner img {
+  width: 100%;
+
+}
+
+/* Seção de promoção */
+.promo {
+  height: 6vh;
+  display: flex;
+  margin: 0 8.5vw;
+  margin-top: 2vh;
+  font-size: 2.3vh;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+/* Container principal */
+.container {
+  font-size: 20px;
+  margin-top: 7vh;
+  min-height: 150vh;
+}
+
+/* Seções de itens */
+.itens {
+  display: flex;
+  margin-bottom: 4vh;
+  justify-content: space-around;
+
+}
+
+
+.produtos {
+  height: 43vh;
+  width: 100%;
+  display: flex;
+  margin-top: 4vh;
+  margin-bottom: 2vh;
+  justify-content: center;
+
+}
+
+.card span {
+  color: #5ca720;
+  font-weight: 510;
+  border-bottom: 1px solid;
+}
+
+.card img:hover {
+
+  background-color: #5ca720;
+
+}
+
+/* Botão de Compra */
+.btn {
+  width: 170px;
+  height: 51px;
+  border: none;
+  color: white;
+  font-size: 23px;
+  font-weight: 510;
+  border-radius: 15px;
+  margin-top: 0.8rem;
+  background-color: #5ca720;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.card-img {
+  width: 20rem;
+  height: 20rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-img::before {
+  left: 0;
+  top: 100%;  
+  content: '';
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  position: absolute;
+  transition: top 0.5s;
+  background-color: #5ca720;
+}
+
+.card-img:hover::before {
+  top: 0;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+}
+
+
+button:hover {
+  transition: 2ms;
+  background-color: #7d5a40;
+}
+
+/* Seção de informações */
+.info {
+  height: 20vh;
+  display: flex;
+  margin-top: 6vh;
+  font-weight: 510;
+  justify-content: space-between;
+}
+
+.contato {
+  width: 20vw;
+  height: 13vh;
+  display: flex;
+  margin-left: 7.3vw;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Formulário de newsletter */
+.news {
+  width: 25vw;
+  height: 13vh;
+  display: flex;
+  font-size: 20px;
+  margin-right: 7.3vw;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+.campo-email {
+  width: 280px;
+  height: 50px;
+  font-size: 15px;
+  color: #D9D9D9;
+  border: 1px solid rgb(235, 235, 235);
+}
+
+
+.formulario {
+  display: flex;
+}
+
+.campo-email,
+.btn-inscrever {
+  margin: 0;
+
+}
+
+/* Botão de inscrição */
+.btn-inscrever {
+  width: 150px;
+  height: 53px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 0 5px 5px 0;
+  background-color: #5ca720;
+  
+}
+
+
+/* Footer */
+footer {
+  height: 8vh;
+  display: flex;
+  margin-top: 3vh;
+  justify-content: space-between;
+}
+
+.social {
+  width: 100%;
+  display: flex;
+  font-size: 2.3vh;
+  margin-left: 7.3vw;
+  align-items: center;  
+}
+
+.social img {
+  margin-right: 1rem;
+}
+
+.bandeira {
+  width: 500px;
+  display: flex;
+  font-size: 2.3vh;
+  align-items: center;
+  margin-right: 4.6vw;
+  justify-content: space-evenly;
+}
+
+
+@media (max-width: 768px) {
+
+  /*Tamanho para tablets*/
+
+}
+
+
+@media (max-width: 704px) {
+  .itens {
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .card-img {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .info {
+    height: 20rem;
+    margin-left: 35px;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .news {
+    width: 100%;
+  }
+
+  .campo-email {
+    width: 20rem;
+
+  }
+
+  .btn-inscrever {
+    width: 20rem;
+
+  }
+
+  .contato {
+    margin: 0;
+  }
+
+  .social img {
+    width: 30px;
+  }
+
+  .bandeira {
+    margin-right: 0;
+  }
+
+  .bandeira img {
+    width: 30px;
+  }
+}
